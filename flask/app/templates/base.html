@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+    <meta charset="UTF-8">
+    {% include "components/css.html" %}
+
+    {% if title %}
+    <title>{{title}}</title>
+    {% else %}
+    <title>Serega Pirat</title>
+    {% endif %}
+</head>
+<body>
+<header class="d-flex justify-content-center">
+    {% include "components/nav.html" %}
+</header>
+
+
+
+<hr>
+
+{% block content %}{% endblock %}
+
+<hr>
+
+{% include "components/footer.html" %}
+{% include "components/js.html" %}
+
+
+</body>
+</html>
